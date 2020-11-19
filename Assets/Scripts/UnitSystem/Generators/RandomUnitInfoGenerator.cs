@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Commons.Extensions;
 using UnitSystem.Characteristics.Color;
 using UnitSystem.Characteristics.Shape;
 using UnitSystem.Characteristics.Size;
@@ -27,16 +28,13 @@ namespace UnitSystem.Generators
 
         public static UnitInfo Generate()
         {
-            var randomResult = new UnitInfo();
+            UnitInfo newUnitInfo;
 
-            var randomShape = availableShapes[UnityEngine.Random.Range(0, availableShapes.Count())];
-            randomResult.shape = (UnitShape) Activator.CreateInstance(randomShape);
-            var randomSize = availableSizes[UnityEngine.Random.Range(0, availableSizes.Count())];
-            randomResult.size = (UnitSize) Activator.CreateInstance(randomSize);
-            var randomColor = availableColors[UnityEngine.Random.Range(0, availableColors.Count())];
-            randomResult.color = (UnitColor) Activator.CreateInstance(randomColor, randomResult.shape);
+            newUnitInfo.shape = (UnitShape) Activator.CreateInstance(availableShapes.GetRandomElement());
+            newUnitInfo.size = (UnitSize) Activator.CreateInstance(availableSizes.GetRandomElement());
+            newUnitInfo.color = (UnitColor) Activator.CreateInstance(availableColors.GetRandomElement(), newUnitInfo.shape);
 
-            return randomResult;
+            return newUnitInfo;
         }
     }
 }
