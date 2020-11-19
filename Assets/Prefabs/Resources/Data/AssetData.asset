@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f20b4dd383154a2580545101b4cd0bde, type: 3}
+  m_Name: AssetData
+  m_EditorClassIdentifier: 
+  visualizerAssets:
+    cube: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    blue: {fileID: 2100000, guid: fa552bfbec794ed49b1eef54641f47c7, type: 2}
+    yellow: {fileID: 2100000, guid: a55eef613d9f7594b868cb1bdbc31ca3, type: 2}
+    green: {fileID: 2100000, guid: edf4b37f0534ae1498206fde231f2032, type: 2}
+    red: {fileID: 2100000, guid: c76273c732a29ea4dab54ff52a3914be, type: 2}
+  unitPrefab: {fileID: 5918376031865208935, guid: ac2ab6193f16ed942b7edcdaa5b8a97c,
+    type: 3}
+  playgroundPrefab: {fileID: 6369646880174445994, guid: 6e6fb23ff5052134faec6d90f0817826,
+    type: 3}
+  canvasPrefab: {fileID: 5330165679793430981, guid: f5e79d08e14a8d24f8da1df5f0d0e10e,
+    type: 3}
+  homePanelPrefab: {fileID: 3446042259076485814, guid: 7a9e75106d45373478c56a319ecb1dbd,
+    type: 3}
+  gameOverPanelPrefab: {fileID: 7359535142542007370, guid: b1af06c80f1f1c840ae5faf89715e581,
+    type: 3}
