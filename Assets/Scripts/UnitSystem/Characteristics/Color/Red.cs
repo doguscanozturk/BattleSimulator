@@ -8,6 +8,8 @@ namespace UnitSystem.Characteristics.Color
         public Red(UnitShape unitShape) : base(unitShape)
         {
         }
+        
+        public override UnityEngine.Color RepresentationColor => UnityEngine.Color.red;
 
         protected override int BonusHealthPoint => unitShape is Cube ? GameDesignVariables.Red.healthPoint : 0;
         protected override int BonusAttackPoint => unitShape is Sphere ? GameDesignVariables.Red.attackPoint : 0;

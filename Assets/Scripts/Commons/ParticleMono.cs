@@ -10,27 +10,10 @@ namespace Commons
 
         public ParticleSystem ThisParticleSystem => thisParticleSystem;
 
-        public void SetStartColor(UnitColor unitColor)
+        public void SetStartColor(Color color)
         {
-            var startColor = Color.white;
-            switch (unitColor)
-            {
-                case Blue b:
-                    startColor = Color.blue;
-                    break;
-                case Yellow y:
-                    startColor = Color.yellow;
-                    break;
-                case Green g:
-                    startColor = Color.green;
-                    break;
-                case Red r:
-                    startColor = Color.red;
-                    break;
-            }
-
             var main = thisParticleSystem.main;
-            main.startColor = startColor;
+            main.startColor = color;
         }
     }
 }

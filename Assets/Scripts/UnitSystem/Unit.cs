@@ -72,7 +72,7 @@ namespace UnitSystem
 
             colliderTransform.localScale = unitInfo.size is Big ? Vector3.one + Vector3.right : Vector3.one;
             
-            hitFx.SetStartColor(unitInfo.color);
+            hitFx.SetStartColor(unitInfo.color.RepresentationColor);
         }
 
         public void Stop()
